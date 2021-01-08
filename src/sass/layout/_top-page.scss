@@ -1,0 +1,88 @@
+.top-page {
+  width: 100%;
+}
+
+.top-page-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+}
+
+.title-wrap {
+  padding: 250px 180px 250px 200px;
+  max-width: 510px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 400;
+  color: map-get($colors, txt-dark);
+  padding-bottom: 16px;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.subtitle{
+  color: map-get($colors, subtitle-black);
+  font-size: 72px;
+  line-height: 98px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.explore-btn{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  background-color: map-get($colors, bg-brown);
+  width: 175px;
+  height: 50px;
+  border-radius: 4px;
+  color: map-get($colors, txt-white);
+  border: 0 solid transparent;
+  cursor: pointer;
+}
+
+.bg-container {
+  width: 980px;
+  height: 800px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.bg-layer__item {
+  position: absolute;
+}
+
+.pattern {
+  width: 382px;
+  height: 382px;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../../img/toppage-bg.svg);
+  @include bg-img;
+}
+
+.rect {
+  top: 0;
+  right: 0;
+  background-color: red;
+  opacity: .3;
+  width: 730px;
+  height: 800px;
+  border-bottom-left-radius: 180px;
+}
+
+.table {
+  width: 568px;
+  height: 577px;
+  right: 340px;
+  bottom: 58px;
+  background-image: url(../../../img/table.svg);
+  @include bg-img;
+}

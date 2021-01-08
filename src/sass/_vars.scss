@@ -1,0 +1,28 @@
+$colors: (
+        txt-dark: #3E3F43,
+        subtitle-black: #313235,
+        txt-black: #000000,
+        menu-txt: rgba(34, 34, 34, 0.75),
+        menu-active: #DAA520,
+        txt-white: #ffffff,
+        bg-pink: #F9BDBD,
+        bg-brown: #DAA520,
+        bg-gray: #E5E5E5,
+        title-gray: rgba(34, 34, 34, 0.1),
+        num-pink: rgba(249,189,189,0.25),
+        mail-gray: #AFAFAF,
+        footer-gray: #8D8D8D
+);
+
+$min-breakpoints: (
+        's': 576px,
+        'm': 768px,
+        'l': 992px,
+        'xl': 1200px
+) !default;
+
+
+/* body {
+background-color: map-get($colors, theme-blue);
+}
+*/
