@@ -588,7 +588,7 @@ background-color: map-get($colors, theme-blue);
   height: 382px;
   bottom: 0;
   left: 0;
-  background-image: url(../../../img/toppage-bg.svg);
+  background-image: url(../../img/toppage-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -607,7 +607,7 @@ background-color: map-get($colors, theme-blue);
   height: 577px;
   right: 340px;
   bottom: 58px;
-  background-image: url(../../../img/table.svg);
+  background-image: url(../../img/table.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
