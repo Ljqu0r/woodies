@@ -1,5 +1,8 @@
 .top-page {
   width: 100%;
+  & .row{
+    padding-bottom: 174px;
+  }
 }
 
 .top-page-wrap {
@@ -10,7 +13,7 @@
 }
 
 .title-wrap {
-  padding: 250px 180px 250px 200px;
+  padding: 250px 180px 0 200px;
   max-width: 510px;
 }
 
@@ -47,42 +50,44 @@
   cursor: pointer;
 }
 
-.bg-container {
+.top-page-layer {
   width: 980px;
   height: 800px;
   top: 0;
   right: 0;
   position: absolute;
+  & .pattern{
+    bottom: 0;
+    left: 0;
+  }
+  & .rect{
+    top: 0;
+    right: 0;
+    background-color: map-get($colors, bg-red);
+    opacity: .3;
+    width: 730px;
+    height: 800px;
+    border-bottom-left-radius: 180px;
+  }
+  & .table {
+    width: 568px;
+    height: 577px;
+    right: 340px;
+    bottom: 58px;
+    background-image: url(../../img/table.svg);
+    @include bg-img;
+  }
 }
 
-.bg-layer__item {
-  position: absolute;
-}
-
-.pattern {
+.pattern{
   width: 382px;
   height: 382px;
-  bottom: 0;
-  left: 0;
   background-image: url(../../img/toppage-bg.svg);
   @include bg-img;
 }
 
-.rect {
-  top: 0;
-  right: 0;
-  background-color: red;
-  opacity: .3;
-  width: 730px;
-  height: 800px;
-  border-bottom-left-radius: 180px;
+.top-page-layer__item {
+  position: absolute;
 }
 
-.table {
-  width: 568px;
-  height: 577px;
-  right: 340px;
-  bottom: 58px;
-  background-image: url(../../img/table.svg);
-  @include bg-img;
-}
+
