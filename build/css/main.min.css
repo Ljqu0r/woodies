@@ -538,7 +538,8 @@ background-color: map-get($colors, theme-blue);
 
 .top-page {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 900px; }
   .top-page .row {
     padding-bottom: 174px; }
 
@@ -659,7 +660,6 @@ background-color: map-get($colors, theme-blue);
     display: flex;
     align-items: center;
     white-space: nowrap;
-    width: 100%;
     justify-content: flex-end; }
     .heading-wrap .heading-about:before {
       content: '';
@@ -737,8 +737,7 @@ background-color: map-get($colors, theme-blue);
   display: flex;
   width: 100%;
   padding: 64px 0;
-  height: 177px;
-  max-height: 177px; }
+  max-height: 240px; }
 
 .stages-col {
   flex-grow: 1;
@@ -788,5 +787,78 @@ background-color: map-get($colors, theme-blue);
     height: 60px;
     border: 0 solid transparent;
     cursor: pointer; }
+
+.goods {
+  padding-top: 120px; }
+
+.goods .heading-about:before {
+  width: 530px; }
+
+.cards-wrap {
+  padding: 64px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.card {
+  width: 280px;
+  height: 400px;
+  margin-right: 25.75px;
+  margin-bottom: 20px;
+  position: relative; }
+
+.card:nth-child(5n+5) {
+  margin-right: 0;
+  align-self: flex-end; }
+
+.card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FF0000;
+  z-index: -1;
+  opacity: .3;
+  border-bottom-left-radius: 120px;
+  border-top-right-radius: 120px; }
+
+.card:nth-child(3n+2) .card-bg {
+  background-color: #ffac00; }
+
+.card:nth-child(3n+3) .card-bg {
+  background-color: #009186; }
+
+.card-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.desk-card {
+  left: 0;
+  transform: translate(0, -50%); }
+
+.product {
+  color: #3E3F43;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 24px 0 0 16px; }
+
+.card-btn {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3E3F43;
+  width: 123px;
+  height: 40px;
+  border: 1px solid #3E3F43;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent; }
 
 /*# sourceMappingURL=main.min.css.map */
