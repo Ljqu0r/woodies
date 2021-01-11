@@ -537,7 +537,8 @@ background-color: map-get($colors, theme-blue);
   cursor: pointer; }
 
 .top-page {
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
   .top-page .row {
     padding-bottom: 174px; }
 
@@ -618,9 +619,11 @@ background-color: map-get($colors, theme-blue);
 
 .about-us {
   padding-top: 120px;
+  padding-bottom: 120px; }
+
+.sides-pad {
   padding-right: 200px;
-  padding-left: 200px;
-  padding-bottom: 126px; }
+  padding-left: 200px; }
 
 .about-content {
   position: relative; }
@@ -726,5 +729,64 @@ background-color: map-get($colors, theme-blue);
     right: 0;
     bottom: 0;
     background-image: url(../../img/spoons.svg); }
+
+.how-it-works .heading-about:before {
+  width: 370px; }
+
+.stages-wrap {
+  display: flex;
+  width: 100%;
+  padding: 64px 0;
+  height: 177px;
+  max-height: 177px; }
+
+.stages-col {
+  flex-grow: 1;
+  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+
+.stages-num {
+  color: rgba(249, 189, 189, 0.25);
+  position: absolute;
+  font-weight: 600;
+  font-size: 136px;
+  line-height: 131px;
+  text-align: center;
+  z-index: -1;
+  left: 52px;
+  top: 20px; }
+
+.stages-icon__icon {
+  width: 160px;
+  height: 160px; }
+
+.stages-text {
+  color: #3E3F43;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  padding-top: 30px; }
+
+.stages-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 54px; }
+  .stages-btn .get-btn {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #DAA520;
+    width: 230px;
+    height: 60px;
+    border: 0 solid transparent;
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.min.css.map */

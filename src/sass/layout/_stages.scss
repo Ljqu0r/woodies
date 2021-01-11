@@ -1,0 +1,72 @@
+.how-it-works{
+  & .heading-about{
+    &:before{
+      width: 370px;
+    }
+  }
+}
+
+.stages-wrap{
+  display: flex;
+  width: 100%;
+  padding: 64px 0;
+  height: 177px;
+  max-height: 177px;
+}
+
+.stages-col{
+  flex-grow: 1;
+  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.stages-num{
+  color: map-get($colors, num-pink);
+  position: absolute;
+  font-weight: 600;
+  font-size: 136px;
+  line-height: 131px;
+  text-align: center;
+  z-index: -1;
+  left: 52px;
+  top: 20px;
+ }
+
+.stages-icon{
+  &__icon{
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.stages-text{
+  color: map-get($colors, txt-dark);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  padding-top: 30px;
+}
+
+.stages-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 54px;
+  & .get-btn{
+    color: map-get($colors, txt-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: map-get($colors, bg-brown);
+    width: 230px;
+    height: 60px;
+    border: 0 solid transparent;
+    cursor: pointer;
+  }
+}
