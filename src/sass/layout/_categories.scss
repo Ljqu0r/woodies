@@ -1,23 +1,23 @@
-.goods{
+.goods {
   padding-top: 120px;
 }
 
-.goods{
-  & .heading-about{
-    &:before{
+.goods {
+  & .heading-about {
+    &:before {
       width: 530px;
     }
   }
 }
 
-.cards-wrap{
-  padding: 64px 0;
+.cards-wrap {
+  padding: 64px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.card{
+.card {
   width: 280px;
   height: 400px;
   margin-right: 25.75px;
@@ -25,12 +25,12 @@
   position: relative;
 }
 
-.card:nth-child(5n+5){
+.card:nth-child(5n+5) {
   margin-right: 0;
   align-self: flex-end;
 }
 
-.card-bg{
+.card-bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,31 +43,31 @@
   border-top-right-radius: 120px;
 }
 
-.card:nth-child(3n+2){
-  & .card-bg{
+.card:nth-child(3n+2) {
+  & .card-bg {
     background-color: map-get($colors, bg-gold);
   }
 }
 
-.card:nth-child(3n+3){
-  & .card-bg{
-    background-color: map-get($colors,bg-green);
+.card:nth-child(3n+3) {
+  & .card-bg {
+    background-color: map-get($colors, bg-green);
   }
 }
 
-.card-icon{
+.card-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.desk-card{
+.desk-card {
   left: 0;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 }
 
-.product{
+.product {
   color: map-get($colors, txt-dark);
   font-weight: 800;
   font-size: 24px;
@@ -75,17 +75,17 @@
   padding: 24px 0 0 16px;
 }
 
-.card-btn{
+.card-btn {
   position: absolute;
   bottom: 24px;
   right: 16px;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  color: map-get($colors,txt-dark);
+  color: map-get($colors, txt-dark);
   width: 123px;
   height: 40px;
-  border: 1px solid map-get($colors,txt-dark);
+  border: 1px solid map-get($colors, txt-dark);
   border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
