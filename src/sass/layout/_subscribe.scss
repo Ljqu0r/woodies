@@ -1,0 +1,50 @@
+.subs-form{
+  padding: 52px 0;
+  display: flex;
+  align-items: center;
+}
+
+.subs-form__box{
+  width: 52%;
+}
+
+.subs-form__title{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 42px;
+  color: map-get($colors, txt-dark);
+}
+
+.subs-form__text{
+  color: map-get($colors, txt-dark);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subs-form__mail{
+  height: 50px;
+  border: 1px solid map-get($colors, bg-brown);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: calc(48% - 180px);
+  padding-left: 16px;
+  &::placeholder{
+    color: map-get($colors, mail-gray);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}
+
+.subs-form__submit{
+  height: 54px;
+  width: 180px;
+  font-weight: 600;
+  font-size: 16px;
+  color: map-get($colors, txt-white);
+  background-color: map-get($colors, bg-brown);
+  border: 0 solid transparent;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

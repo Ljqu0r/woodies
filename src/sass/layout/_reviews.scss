@@ -17,7 +17,7 @@
 }
 
 .image-box {
-  transform: translateY(-12px);
+  height: 500px;
 }
 
 .image-box:first-child {
@@ -25,10 +25,11 @@
 }
 
 .image-box__item {
-  height: 500px;
+  height: 100%;
   width: 375px;
   border-bottom-right-radius: 145px;
   border-top-left-radius: 145px;
+
 }
 
 
@@ -97,14 +98,19 @@
     @include bg-img;
   }
 
+  &__item.gray-star {
+    background-image: url(../../img/gray-star.svg);
+  }
+
   &__item + &__item {
     margin-left: 10px;
   }
+
 }
 
 .slider-button-next {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   cursor: pointer;
   z-index: 10;
   right: 0;
@@ -133,7 +139,7 @@
 
 .slider-button-prev {
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   cursor: pointer;
   z-index: 10;
   right: 503px;
@@ -157,4 +163,33 @@
     font-size: 42px;
     transform: translateY(-1px);
   }
+}
+
+
+.image-slider.swiper-container {
+  overflow: visible;
+}
+
+//custom pagination css
+.custom-pagination {
+  & .swiper-pagination-bullet {
+    width: 50px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  & .swiper-pagination-bullet-active{
+    background-color: map-get($colors, menu-active);
+  }
+}
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets.custom-pagination {
+  width: auto;
+  bottom: 0;
+  right: 0;
+  left: unset;
+  transform: translateY(50px);
 }

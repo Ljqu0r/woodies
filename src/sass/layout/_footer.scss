@@ -1,0 +1,141 @@
+.footer {
+  padding-top: 84px;
+
+  &:before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 501px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../img/footer-bg1.jpg);
+    @include bg-img;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 508px;
+    z-index: -1;
+    height: 501px;
+    background-image: url(../../img/footer-bg.jpg);
+    @include bg-img;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: map-get($colors, txt-dark);
+    top: 0;
+    left: 0;
+    transform: translateY(-50px);
+    opacity: .3;
+  }
+}
+
+.contact-list {
+  &__item + &__item {
+    margin-top: 16px;
+  }
+
+  &__item:not(:nth-child(2)) a, &__item:not(:nth-child(2)) p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: map-get($colors, footer-gray);
+  }
+}
+
+.footer-box + .footer-box {
+  margin-left: 52px;
+}
+
+.footer-box {
+  &__title {
+    color: map-get($colors, footer-title);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 33px;
+  }
+}
+
+.product-list {
+  &__item a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: map-get($colors, footer-gray);
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}
+
+.resource-list {
+  &__item a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: map-get($colors, footer-gray);
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}
+
+.company-list {
+  &__item a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: map-get($colors, footer-gray);
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}
+
+.social-list {
+  &__item a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: map-get($colors, footer-gray);
+  }
+
+  &__item {
+    margin-top: 20px;
+  }
+}
+
+.footer-copyright {
+  width: 100%;
+  padding: 55px 0 25px 0;
+  display: flex;
+
+  &__text {
+    margin: 0 auto;
+    color: map-get($colors, footer-gray);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+  }
+}
